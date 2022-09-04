@@ -9,7 +9,7 @@ router.get('/', ensureAuth, recipesController.getRecipes);
 // Will get a single recipe by id
 router.get('/:id', ensureAuth, recipesController.getOneRecipe);
 
-// Will add a new recipe
+// Will get and render the add new recipe view
 router.post('/add', ensureAuth, recipesController.getAddRecipe);
 
 // Will add a new recipe
