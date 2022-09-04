@@ -10,6 +10,14 @@ module.exports = {
       console.log(err);
     }
   },
+  getOneRecipe: async (req, res) => {
+    try {
+      const oneRecipe = await Recipe.findById(req.params.id);
+      res.render('onerecipe.ejs', { recipe: oneRecipe });
+    } catch (err) {
+      console.log(err);
+    }
+  },
   getAddRecipe: async (req, res) => {
     console.log(req.user);
     try {
