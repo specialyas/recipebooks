@@ -23,6 +23,7 @@ A simple recipe app built using the MVC Architecture, we have also implemented "
 # Optimizations
 The app can be optimized by adding a sub category to allow for grouping of recipes.
 
+# Development Setup
 1. Clone repo to your machine
 2. Run `npm install` in terminal to install all project dependencies
 3. Create a .env file in the config folder with the following info:
@@ -32,5 +33,3 @@ DB_STRING = database string here
 ```
 4. Type ```npm run start``` in terminal and press enter
 5. Visit ```http://localhost:3000``` in your browser
-# Optimizations
-The app can be optimized by adding a sub category to allow for grouping of recipes.
