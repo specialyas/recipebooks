@@ -10,6 +10,9 @@ router.get('/', ensureAuth, recipesController.getRecipes);
 router.get('/:id', ensureAuth, recipesController.getOneRecipe);
 
 // Will add a new recipe
-router.post('/', ensureAuth, recipesController.addRecipe);
+router.post('/add', ensureAuth, recipesController.getAddRecipe);
+
+// Will add a new recipe
+router.post('/add', ensureAuth, recipesController.postAddRecipe);
 
 module.exports = router;
