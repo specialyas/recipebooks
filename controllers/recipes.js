@@ -18,4 +18,18 @@ module.exports = {
       console.log(err);
     }
   },
+  postAddRecipe: async (req, res) => {
+    try {
+      await Recipe.create({
+        userId: req.user.id,
+        recipeName: req.body.recipeName,
+        ingredients: req.body.ingredients,
+        instructions: req.body.instructions,
+      });
+      console.log('Recipe has been added!');
+      res.redirect('/recipes');
+    } catch (err) {
+      console.log(err);
+    }
+  },
 };
