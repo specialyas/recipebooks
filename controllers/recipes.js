@@ -10,4 +10,12 @@ module.exports = {
       console.log(err);
     }
   },
+  getAddRecipe: async (req, res) => {
+    console.log(req.user);
+    try {
+      res.render('addrecipe.ejs');
+    } catch (err) {
+      console.log(err);
+    }
+  },
 };
